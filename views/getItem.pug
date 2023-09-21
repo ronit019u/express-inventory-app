@@ -1,0 +1,17 @@
+extends layout 
+
+block content 
+
+h1= title 
+h2= item.name 
+p= item.description 
+div(style="width: 50vw")
+img(src= `${item.url}` alt="Item pic" style="width: 100%; height: 100% object-fit: contain;")
+hr
+h2 Category 
+a(href=item.category.url)= item.category.name 
+hr
+h2 Category 
+a(href=`${item.url}/update` style="font-size: 16px") Update Item 
+br
+a(href=`${item.url}/delete` style="font-size: 16px") Delete Item

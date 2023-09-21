@@ -1,0 +1,19 @@
+extends layout 
+
+block content 
+h1= title 
+form(action="", method="post")
+label Name 
+br
+input(type="text". name="name" required maxlength="30" autocomplete="off")
+br
+label Description 
+input(type="text", name="description" maxlength="30" autocomplete="off")
+br
+label Category 
+br
+select(name="category" required)
+each category in categorys 
+option(value=category._id) #{category.name}
+br
+input(type="submit", value="Create")

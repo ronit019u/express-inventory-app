@@ -1,0 +1,17 @@
+extends layout 
+ block content 
+ h1= title 
+ form(action="", method="post")
+ label Name 
+ br
+ input(type="text", name="name" required maxlength="30" autocomplete="off" value=item.name)
+ br
+ label Description 
+ br
+ input(type="text", name="description" maxlength="30" autocomplete="off" value=item.description)
+ br
+ label Category 
+ br
+ select(name="category" required)
+ each category in categorys 
+ 
