@@ -2,6 +2,7 @@
   "name": "express-localinventory-app",
   "version": "0.0.0",
   "private": true,
+  "node": ">=18.17.0",
   "scripts": {
     "start": "node ./bin/www"
   },
